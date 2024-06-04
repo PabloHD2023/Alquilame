@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Alquilame</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/img/Logo-alquilame-azul.svg" alt="logo alquilame">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-circle"></i></button>
+            <ul class="nav-list">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="/html/nosotros.html">NOSOTROS</a></li>
+                <li><a href="/html/contacto.html">CONTACTO</a></li>
+                <li><a href="/html/registro.html">REGISTRO</a></li>
+                <li><a href="/html/inicio_sesion.html"><i class="bi bi-box-arrow-in-right"></i>INICIAR SESION</a></li>
+                <li><a href="/html/inicio_sesion_propietario.html"><button class="publicar">PUBLICAR</button></a></li>
+            </ul>
+        </nav>        
+    </header> 
+    <article>
+        <article class="mis_propiedades">
+            <section class="title-publicar magic">
+                <h2>Mis propiedades</h2>
+            </section>
+            <section class="crear_propiedades">
+                <div class="encabezado_c_p">
+                    <h4>Publicar Propiedad</h4>
+                    <button>Nueva Propiedad</button>
+                    <button>Editar Propiedad</button>
+                    <button>Eliminar Propiedad</button>
+                </div>
+                <div class="caracteristicas_propiedades">
+                    <div class="crear_aviso">
+                        <select aria-label="state" name="operacion" class="select_prop">
+                            <option value="1" selected>Tipo Operación</option>
+                            <option value="2">Venta</option>
+                            <option value="3">Alquiler</option>
+                            <option value="4">Alquiler temporario</option>
+                        </select>
+                        <select aria-label="state" name="propiedad" class="select_prop">
+                            <option value="1" selected>Tipo Propiedad</option>
+                            <option value="2">Casa</option>
+                            <option value="3">Ph</option>
+                            <option value="4">Oficina</option>
+                            <option value="5">Cochera</option>
+                            <option value="6">Locales</option>
+                            <option value="7">Galpón</option>
+                            <option value="8">Depósito</option>
+                            <option value="9">Terreno</option>
+                        </select>
+                        <select aria-label="state" name="ubicacion" class="select_prop">
+                            <option value="1" selected>Ubicación</option>
+                            <option value="2">CasaCABA</option>
+                            <option value="3">Buenos Aires - zona norte</option>
+                            <option value="4">Buenos Aires - zona sur</option>
+                            <option value="5">Buenos Aires - zona oeste</option>
+                        </select>
+                        <input type="text" class="select_prop" placeholder="Superficie total">
+                        <input type="text" class="select_prop" placeholder="Superficie cubierta">
+                        <select aria-label="state" name="dormitorios" class="select_prop">
+                            <option value="1" selected>Dormitorios</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="5">4 ó mas</option>
+                        </select>
+                        <select aria-label="state" name="baños" class="select_prop">
+                            <option value="1" selected>Baños</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="3">3 ó mas</option>
+                        </select>
+                        <select aria-label="state" name="cochera" class="select_prop">
+                            <option value="1" selected>Cochera</option>
+                            <option value="2">SI</option>
+                            <option value="3">NO</option>
+                        </select>
+                        <select aria-label="state" name="amenities" class="select_prop">
+                            <option value="1" selected>Amenities</option>
+                            <option value="2">SI</option>
+                            <option value="3">NO</option>
+                        </select>
+                    <div>
+                        <textarea class="select_prop" name="descripcion_prop" id="descripcion" cols="50" rows="10" placeholder="Descripción de la propiedad"></textarea>
+                    </div>
+                        <form action="submit">
+                            <input type="file" id="myFile" name="filename">
+                            <input type="submit">
+                        </form>
+                        <button class="boton_carga_prop">Cargar nueva propiedad</button>
+                    <div>
+                </div>
+            </section>                                           
+        </article>
+        <article class="mis_clasificados">
+            <div>
+                <h4>Mis propiedades en alquiler</h4>
+            </div>
+            <section class="prop_alq">
+                <div class="prop_ofrecida">
+                    <img src="../static/img/pexels-binyamin-mellish-186077.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Superficie Cubierta: <span>150m2</span></p>
+                        <p>Superficie total: <span>180m2</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span></p>
+                        <p>Aménities: <span>NO</span></p><br>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="../static/img/pexels-christa-grover-2121120.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Superficie Cubierta: <span>150m2</span></p>
+                        <p>Superficie total: <span>180m2</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span></p>
+                        <p>Aménities: <span>NO</span></p><br>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="../static/img/pexels-expect-best-323772.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Superficie Cubierta: <span>150m2</span></p>
+                        <p>Superficie total: <span>180m2</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span></p>
+                        <p>Aménities: <span>NO</span></p><br>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="../static/img/pexels-mark-2724748.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Superficie Cubierta: <span>150m2</span></p>
+                        <p>Superficie total: <span>180m2</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span></p>
+                        <p>Aménities: <span>NO</span></p><br>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="../static/img/pexels-pixabay-259962.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Superficie Cubierta: <span>150m2</span></p>
+                        <p>Superficie total: <span>180m2</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span></p>
+                        <p>Aménities: <span>NO</span></p><br>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="../static/img/pexels-mark-2724749.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Superficie Cubierta: <span>150m2</span></p>
+                        <p>Superficie total: <span>180m2</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span></p>
+                        <p>Aménities: <span>NO</span></p><br>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </article>
+    <footer>
+        <div class="barra-color">
+        </div>      
+        <nav class="footer-nav">               
+            <div class="info-section">
+                <div class="info">
+                    <h6>Lo mejor del mercado</h6>
+                    <p>Donde sea que estés buscando, encontraremos la mejor propiedad para vos y tu familia.</p>
+                </div>
+                <div class="info">
+                    <h6>Orientación al cliente</h6>
+                    <p>Centramos nuestro esfuerzo en la satisfacción del cliente, aportando soluciones competitivas y de calidad.</p>
+                </div>
+                <div class="info">
+                    <h6>Innovación</h6>
+                    <p>Promovemos mejoras continuas e innovación para alcanzar la máxima calidad desde criterios de rentabilidad.</p>
+                </div>
+            </div>
+            <div class="comunicate">                    
+                <p>Llamanos: <a href="tel:+5411-5555-5555">(+54-11) 5555-5555</a></p>
+                <p>Escribinos: <a href="mailto:contacto@alquilame.com.ar">contacto@alquilame.com.ar</a></p>
+            </div>            
+            <div class="social-footer">                
+                <div class="iconos-social">
+                    <h4>Seguinos</h4>
+                    <div class="iconos-img">
+                        <a href="https://facebook.com"><img src="../static/img/facebook-logo-color.png" alt="facebook"></a>
+                        <a href="https://twitter.com/home"><img src="../static/img/Twitter.svg" alt="X"></a>
+                        <a href="https://instagram.com"><img src="../static/img/instagram-logo-color.png" alt="instagram"></a>
+                        <a href="https://whatsapp.com"><img src="../static/img/whatsapp-logo-color.png" alt="whatsapp"></a>
+                    </div>                                        
+                </div>
+                <div class="copy-design">
+                    <div class="copyright">
+                        <p><b>Copyright ©<script>document.write(new Date().getFullYear());</script> All Rights Reserved.</p></b>
+                    </div>
+                    <div class="diseñador">
+                        <a href="#"><p>Creado por: PHD®</p></a>
+                    </div>
+                </div>                                                     
+            </div>                                
+        </nav>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>

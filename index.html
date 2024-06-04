@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Alquilame</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./static/img/Logo-alquilame-azul.svg" alt="logo alquilame">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-circle"></i></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./html/nosotros.html">NOSOTROS</a></li>
+                <li><a href="./html/contacto.html">CONTACTO</a></li>
+                <li><a href="./html/registro.html">REGISTRO</a></li>
+                <li><a href="./html/inicio_sesion.html"><i class="bi bi-box-arrow-in-right"></i>INICIAR SESION</a></li>
+                <li><a href="./html/inicio_sesion_propietario.html"><button class="publicar">PUBLICAR</button></a></li>
+            </ul>
+        </nav>        
+    </header> 
+    <article>
+        <section class="busqueda-gral">            
+            <div class=" titulo magic">
+                <h2>Búsqueda por categorías</h2>
+            </div>
+            <div class="busqueda">
+                <div>
+                    <select aria-label="state" name="operacion" class="select">
+                        <option value="1" selected>Tipo Operación</option>
+                        <option value="2">Venta</option>
+                        <option value="3">Alquiler</option>
+                        <option value="4">Alquiler temporario</option>
+                    </select>
+                </div>
+                <div>
+                    <select aria-label="state" name="propiedad" class="select">
+                        <option value="1" selected>Tipo Propiedad</option>
+                        <option value="2">Casa</option>
+                        <option value="3">Ph</option>
+                        <option value="4">Oficina</option>
+                        <option value="5">Cochera</option>
+                        <option value="6">Locales</option>
+                        <option value="7">Galpón</option>
+                        <option value="8">Depósito</option>
+                        <option value="9">Terreno</option>
+                    </select>
+                </div>                       
+                <div>
+                    <input type="text" id="quicksearch" placeholder="Buscar por ubicación, dirección o calle">                        
+                </div>
+                <div>
+                    <div class="buscar"><i class="bi bi-search"></i></div>
+                </div>
+                <div class="cbox" id="cbox1">
+                    <label for="cbox1">
+                        <input type="checkbox" id="cbox1"  value="colegios"/>Mostrar colegios en la zona
+                    </label>
+                </div>
+                <div class="cbox" id="cbox2">
+                    <label for="cbox2">
+                        <input type="checkbox" id="cbox2" value="hospitales"/>Mostrar hospitales en la zona
+                    </label>
+                </div>                    
+            </div>
+        </section>
+        <section class="prop-destacadas">
+            <h3>Propiedades destacadas</h3>
+            <div class="destacadas">
+                <div class="prop_ofrecida">
+                    <img src="./static/img/pexels-binyamin-mellish-186077.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5>Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="./static/img/pexels-christa-grover-2121120.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5>Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="./static/img/pexels-expect-best-323772.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5>Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="./static/img/pexels-expect-best-323780.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5>Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="./static/img/pexels-mark-2724749.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5 class="precio_prop">Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+                <div class="prop_ofrecida">
+                    <img src="./static/img/pexels-pixabay-259588.jpg" alt="">
+                    <div class="info_prop">
+                        <p>Tipo operacion: <span>Venta</span></p>
+                        <p>Tipo propiedad: <span>PH</span></p>
+                        <p>Ubicación: <span>CABA</span></p>
+                        <p>Dormitorios: <span>3</span></p>
+                        <p>Baños: <span>2</span></p>
+                        <p>Cochera: <span>NO</span>
+                        <p>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus quo blanditiis corporis hic rerum aliquam unde in, saepe commodi.</span></p>
+                        <h5>Precio: U$S 150.000</h5>
+                    </div>                        
+                </div>
+            </div>
+        </section>
+        <section class="seguros">
+            <h3>Algunas de las aseguradoras de garantías con las que trabajamos</h3>
+            <div class="logos-seguros">
+                <a href="https://www.provinciaseguros.com.ar/" target="_blank"><img src="./static/img/provincia-seguros-logo-9E6E4DB2FC-seeklogo.com.png" alt="Provincia Seguros"></a>
+                <a href="https://vivienda.buenosaires.gob.ar/garantia#top" target="_blank"><img src="./static/img/Logotipo_de_la_Ciudad_de_Buenos_Aires.svg.png" alt="Ciudad Seguros"></a>
+                <a href="https://www.supervielle.com.ar/blog/educacion-financiera/que-es-un-seguro-de-caucion" target="_blank"><img src="./static/img/grupo-supervielle-logo-D2E5969FBA-seeklogo.com.png" alt="Superville Seguros"></a>
+                <a href="https://www.nacion-seguros.com.ar/seguro-garantia-alquiler/" target="_blank"><img src="./static/img/315px-Banco_Nación.svg.png" alt="Nacion Seguros"></a>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="barra-color">
+        </div>      
+        <nav class="footer-nav">               
+            <div class="info-section">
+                <div class="info">
+                    <h6>Lo mejor del mercado</h6>
+                    <p>Donde sea que estés buscando, encontraremos la mejor propiedad para vos y tu familia.</p>
+                </div>
+                <div class="info">
+                    <h6>Orientación al cliente</h6>
+                    <p>Centramos nuestro esfuerzo en la satisfacción del cliente, aportando soluciones competitivas y de calidad.</p>
+                </div>
+                <div class="info">
+                    <h6>Innovación</h6>
+                    <p>Promovemos mejoras continuas e innovación para alcanzar la máxima calidad desde criterios de rentabilidad.</p>
+                </div>
+            </div>
+            <div class="comunicate">                    
+                <p>Llamanos: <a href="tel:+5411-5555-5555">(+54-11) 5555-5555</a></p>
+                <p>Escribinos: <a href="mailto:contacto@alquilame.com.ar">contacto@alquilame.com.ar</a></p>
+            </div>            
+            <div class="social-footer">                
+                <div class="iconos-social">
+                    <h4>Seguinos</h4>
+                    <div class="iconos-img">
+                        <a href="https://facebook.com"><img src="./static/img/facebook-logo-color.png" alt="facebook"></a>
+                        <a href="https://twitter.com/home"><img src="./static/img/Twitter.svg" alt="X"></a>
+                        <a href="https://instagram.com"><img src="./static/img/instagram-logo-color.png" alt="instagram"></a>
+                        <a href="https://whatsapp.com"><img src="./static/img/whatsapp-logo-color.png" alt="whatsapp"></a>
+                    </div>                                        
+                </div>
+                <div class="copy-design">
+                    <div class="copyright">
+                        <p><b>Copyright ©<script>document.write(new Date().getFullYear());</script> All Rights Reserved.</p></b>
+                    </div>
+                    <div class="diseñador">
+                        <a href="#"><p>Creado por: PHD®</p></a>
+                    </div>
+                </div>                                                     
+            </div>                                
+        </nav>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
