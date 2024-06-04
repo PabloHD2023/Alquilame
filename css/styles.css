@@ -1410,7 +1410,7 @@ footer {
 
 }
 
-@media screen and (min-width: 430px) and (max-width: 786px) {
+@media screen and (min-width: 400px) and (max-width: 785px) {
 
     /* Comienzo codigo header */
 
@@ -1463,6 +1463,10 @@ footer {
         font-size: var(--font-x-small);
     }
 
+    .logo{
+        width: 10rem;
+    }
+
     /* Fin codigo header */
 
     /* Comienzo codigo del footer */
@@ -1505,6 +1509,11 @@ footer {
 
     /* Comienzo codigo index */
 
+.busqueda-gral{
+    height: auto;
+    padding: 2rem 0;
+}
+
     .busqueda {
         width: 90%;
         display: grid;
@@ -1517,14 +1526,14 @@ footer {
     }
 
     .select {
-        width: 80vw;
+        width: 75vw;
         font-size: var(--font-x-small);
         height: 60px;
         margin: 0 auto;
     }
 
     .cbox {
-        width: 80vw;
+        width: 75vw;
         font-size: var(--font-x-small);
         color: var(--text-color-third);
         padding: var(--padding-xx-small);
@@ -1541,23 +1550,25 @@ footer {
     }
 
     .logos-seguros {
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
     }
 
     .logos-seguros img {
-        width: 90px;
+        width: 180px;
         cursor: pointer;
         padding: 0;
         gap: 0;
     }
 
     #quicksearch {
-        width: 80vw;
+        width: 75vw;
         height: 60px;
     }
 
     .buscar {
-        width: 80vw;
+        width: 75vw;
         height: 60px;
     }
 
