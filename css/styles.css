@@ -1410,8 +1410,11 @@ footer {
 
 }
 
-@media screen and (min-width: 350px) and (max-width: 785px) {
+@media screen and (max-width: 785px) {
 
+    h2{
+        font-size: var(--font-large);
+    }
     /* Comienzo codigo header */
 
     .abrir-menu,
