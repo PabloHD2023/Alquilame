@@ -730,11 +730,13 @@ h3 {
     font-size: var(--font-x-small);
     padding: 0 10px;
     text-align: justify;
+    line-height: 1.7;
+    font-weight: bolder;
 }
 
 .info_prop span {
     color: var(--bg-color-principal);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .prop_ofrecida img {
